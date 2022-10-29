@@ -1,0 +1,28 @@
+<nav class="navbar navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">AI Market</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body text-primary">
+        <form action="/email" method="GET">
+          <h3>Login or Register</h3>
+          <div class="mb-3">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name = "email">
+              <label for="floatingInput">Email address</label>
+            </div>          
+          </div>
+          <div class="d-grid gap-2 d-block">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            </div>        
+          </form>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+
+<main>
+  <div class="container py-4">
+    <header class = "pb-4 ">
+      <%- include('../partials/header'); %>
+      <% console.log(email) %>
+    </header>
+    <div class="row d-flex justify-content-center">
+      <div class="col-6 mt-4 text-center">
+        <form class="form-signin" action = "/login" method="POST">
+            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Register for your account</h1>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name = "email" required <% if(email) {%> value = "<%= email%>" <%} else{ %>autofocus="" <%}%>>
+              <label for="floatingEmail">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required <% if(email) {%> autofocus="" <%} %>>
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="mb-3">
+            </div>
+            <div class="d-grid gap-2 d-block">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+            </div>
+          </form>
+      </div>
+    </div>
+
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+
+  </div>
+</main>
+
+  <%- include('../partials/scripts'); %>
+
+</body>
+</html>

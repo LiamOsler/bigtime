@@ -1,0 +1,20 @@
+#header-outer {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #three-area {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  #three-text {
+    position: relative;
+    z-index: 2;
+  }
